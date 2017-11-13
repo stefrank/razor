@@ -51,7 +51,7 @@ namespace WebAPI.Controllers
 
             if (result.IsSuccess())
             {
-                Response.WriteAsync("Transaction ID: " + transaction.Id);
+                Response.WriteAsync("Transaction ID: " + transaction.PayPalDetails.AuthorizationId);
             }
             else
             {
